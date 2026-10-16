@@ -6,7 +6,7 @@ The application is simplified and deliberately contains bugs.
 
 ## Getting started
 
-- The project is implemented in Java 11.
+- The project is implemented in Java 21.
 - The project can be built using [Maven](https://maven.apache.org/).
 - [JUnit](https://junit.org/junit5/) is used for tests, and [Mockito](https://site.mockito.org/) for isolating dependencies.
 
@@ -22,7 +22,7 @@ To compile and run tests also execute:
 mvn test
 ```
 
-(That will be enough to know for the current exercises. If you are more interested, see [this](https://github.com/ftsrg-edu/swsv-labs/wiki/0b-Build-tools) short guide about Maven.)
+(That will be enough to know for the current exercises.)
 
 As this is a really simple project, you can use the command-line build tools or a light-weight IDE like [Visual Studio Code](https://code.visualstudio.com/).
 
