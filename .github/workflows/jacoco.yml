@@ -51,18 +51,6 @@ jobs:
           echo "GT4500 instruction coverage = ${{ steps.jacoco.outputs.coverage }}"
           echo "GT4500 branch coverage = ${{ steps.jacoco.outputs.branches }}"
 
-      - name: Add PR comment with coverage metrics
-        uses: mshick/add-pr-comment@v2
-        with:
-          message: |
-            ### JaCoCo Coverage Report (GT4500)
-
-            | Coverage Metric | Value | Threshold (Minimum) | |
-            | --- | --- | --- | --- |
-            | 👉 Instruction Coverage | ${{ steps.jacoco.outputs.coverage }} | ${{ env.COVERAGE_THRESHOLD }} | ${{ steps.jacoco.outputs.coverage < env.COVERAGE_THRESHOLD && '❌' || '✅' }} |
-            | 🌳 Decision/Branch Coverage | ${{ steps.jacoco.outputs.branches }} | ${{ env.COVERAGE_THRESHOLD }} | ${{ steps.jacoco.outputs.branches < env.COVERAGE_THRESHOLD && '❌' || '✅' }} |
-          allow-repeats: true
-
       - name: Upload coverage report
         uses: actions/upload-artifact@v4
         with:
