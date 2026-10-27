@@ -1,0 +1,5 @@
+SUCCESS
+Unknown firing mode: 'DOUBLE'
+Unknown firing mode: 'SPREAD'
+Unknown command: 'STATUS'
+Unknown command: 'INVALID_COMMAND'
